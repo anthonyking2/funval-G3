@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0711;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#logonexus img {
+  width: 250px;
+  margin-top: 40px;
+}
+
+form {
+  width: 300px;
+  margin-top: 20px;
+}
+
+form h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 4px;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form label {
+  font-size: 14px;
+  color: white;
+}
+
+form a {
+  color: #ccc;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form button {
+  width: 48%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+}
