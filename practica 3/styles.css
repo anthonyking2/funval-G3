@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(39, 146, 39);
+    color: white;
+    text-align: center;
+    padding: 70px;
+    font-size: 3rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    padding: 20px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(34, 33, 33);
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.contenido-de-hero {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.contenido-de-hero p {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.contenido-de-hero img {
+    padding-right: 100px;
+    justify-content: left;
+    flex: 1;
+    max-width: 600px;
+    height: auto;
+}
+
+.hero {
+    background-color: peachpuff;
+    padding-bottom: 50px;
+}
+
+button {
+    background-color: rgb(39, 146, 39);
+    color: white;
+    border-radius: 5px;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.contenido {
+    padding-top: 80px;
+}
+
+h2 {
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
+
+.divcont {
+    background-color: rgb(218, 215, 215);
+    padding-bottom: 20px;
+    padding-left: 100px;
+
+}
+
+.list {
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.parrafo2 {
+    padding-top: 20px;
+}
+
+.parrafo3 {
+    padding-top: 20px;
+}
+footer{
+    background-color: rgb(34, 33, 33);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
