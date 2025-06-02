@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <a href="./practica 1/index.html">ESTE ENLANCE NOS LLEVA A LA PRACTICA CALIFICADA 1</a>
-    <a href="./practica 2/index.html">ESTE ENLANCE NOS LLEVA A LA PRACTICA CALIFICADA 2</a>
-    <a href="./practica 3/index.html">ESTE ENLANCE NOS LLEVA A LA PRACTICA CALIFICADA 3</a>
+
+<body class="bg-[#0D1117] text-white font-sans">
+    <header class="bg-[#1E293B] sticky top-0 z-50 shadow">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="./img/logo carlo bravo.JPG" alt="Logo" class="w-12 h-12 rounded-full shadow-lg" />
+            <nav class="hidden md:flex gap-6">
+                <a href="#inicio" class="hover:text-[#A4FF7A]">Inicio</a>
+                <a href="#habilidades" class="hover:text-[#A4FF7A]">Habilidades</a>
+                <a href="#proyectos" class="hover:text-[#A4FF7A]">Proyectos</a>
+            </nav>
+            <a href="#contacto"
+                class="bg-[#E3FF6A] text-black px-4 py-2 rounded font-semibold hover:scale-105 transition">Contáctame</a>
+        </div>
+    </header>
+    <section id="inicio"
+        class="h- flex flex-col md:flex-row items-center justify-center px-6 py-20 gap-10 bg-gradient-to-br from-[#1E293B] to-[#0D1117]">
+        <img src="./img/FOTO SIN FONDO.png" alt="Foto" class="rounded-full w-64 shadow-2xl" />
+        <div class="text-center md:text-left">
+            <h2 class="text-4xl font-bold mb-4">Hola, soy <span class="text-[#E3FF6A]">CARLO BRAVO</span></h2>
+            <p class="text-xl mb-6">Desarrollador Frontend | Apasionado por la programación</p>
+            <a href="#proyectos" class="text-[#A4FF7A] underline font-medium hover:text-white">Ver mis proyectos</a>
+        </div>
+    </section>
+    <section class="py-20 px-6 bg-[#0D1117]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-4 text-[#A4FF7A]">¿Quién soy?</h3>
+            <p class="text-[#8892B0] mb-6">Soy "Apasionado por la programación y la creación de soluciones tecnológicas.
+                Disfruto convertir ideas en código y enfrentar desafíos que me permitan seguir aprendiendo y mejorando
+                mis habilidades como desarrollador."</p>
+            <img src="./img/tecnologia.jpg" class="mx-auto rounded-xl shadow-lg" alt="Decoración" />
+        </div>
+    </section>
+    <section id="habilidades" class="py-20 bg-[#1E293B] text-center px-6">
+        <h3 class="text-3xl font-bold mb-10 text-[#E3FF6A]">Habilidades</h3>
+        <div class="flex justify-center items-center gap-40 ">
+            <div class="text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    class="w-12 mx-auto" />
+                <p class="mt-2">HTML</p>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    class="w-12 mx-auto" />
+                <p class="mt-2">CSS</p>
+            </div>
+        </div>
+        <a href="./img/CV.pdf" download
+            class="mt-6 inline-block bg-[#A4FF7A] text-black px-6 py-2 rounded font-semibold hover:scale-105 transition">Descargar
+            CV</a>
+    </section>
+    <section id="proyectos" class="py-20 px-6 bg-[#0D1117]">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-[#E3FF6A] mb-10">Proyectos Destacados</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#1E293B] p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-semibold">Practica Calificada 1</h4>
+                    <p class="text-[#8892B0]">Pagina web Simple</p>
+                    <a href="./practica 1/index.html" class="text-[#A4FF7A] underline block mt-2">Ver</a>
+                </div>
+                <div class="bg-[#1E293B] p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-semibold">Practica Calificada 2</h4>
+                    <p class="text-[#8892B0]">Login Nexus</p>
+                    <a href="./practica 2/" class="text-[#A4FF7A] underline block mt-2">Ver</a>
+                </div>
+                <div class="bg-[#1E293B] p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-semibold">Practica Calificada 3</h4>
+                    <p class="text-[#8892B0]">Landing Page Simple</p>
+                    <a href="./practica 3/index.html" class="text-[#A4FF7A] underline block mt-2">Ver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="py-20 px-6 bg-[#1E293B]">
+        <div class="max-w-xl mx-auto">
+            <h3 class="text-3xl font-bold text-[#E3FF6A] mb-8 text-center">Contáctame</h3>
+            <form class="space-y-6">
+                <input type="text" placeholder="Nombre"
+                    class="w-full p-3 rounded bg-[#0D1117] text-white border border-[#8892B0]" />
+                <input type="email" placeholder="Correo electrónico"
+                    class="w-full p-3 rounded bg-[#0D1117] text-white border border-[#8892B0]" />
+                <textarea placeholder="Mensaje" rows="5"
+                    class="w-full p-3 rounded bg-[#0D1117] text-white border border-[#8892B0]"></textarea>
+                <button type="submit"
+                    class="w-full bg-[#E3FF6A] text-black py-3 font-bold rounded hover:scale-105 transition">Enviar
+                    mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="justify-center items-center text-center p-8">
+        <h2> © 2025. Desarrollado por: Carlo Bravo</h2>
+    </footer>
+
 </body>
+
 </html>
