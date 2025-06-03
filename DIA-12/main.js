@@ -58,6 +58,17 @@ if (nombre ==="carlo") {
 }
 // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
 
+let usuarioCorrecto = "admin";
+let contrasenaCorrecta = "1234";
+let usuarioIngresado = "admin";
+let contrasenaIngresada = "1234";
+
+if (usuarioIngresado === usuarioCorrecto && contrasenaIngresada === contrasenaCorrecta) {
+  console.log("Acceso concedido ✅");
+} else {
+  console.log("Acceso denegado ❌");
+}
+
 // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
 let numero = -7;
 
@@ -70,15 +81,99 @@ if (numero > 0) {
 }
 
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+let edad = 16;
 
+if (edad >= 18) {
+  console.log("Puedes votar 🗳️");
+} else {
+  let faltan = 18 - edad;
+  console.log(`No puedes votar. Te faltan ${faltan} años.`);
+}
 
-// 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
-//    dependiendo de la edad
+// 5. Usa el operador ternario para asignar "adulto" o "menor"
+let categoria = (edad >= 18) ? "adulto" : "menor";
+console.log("5:", categoria); // "menor"
 
-// switch
+// 6. Muestra en qué estación del año nos encontramos según el mes
+let mes = "julio"; // puedes cambiar a cualquier mes
+let estacion;
 
-// 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+switch (mes.toLowerCase()) {
+  case "diciembre":
+  case "enero":
+  case "febrero":
+    estacion = "verano";
+    break;
+  case "marzo":
+  case "abril":
+  case "mayo":
+    estacion = "otoño";
+    break;
+  case "junio":
+  case "julio":
+  case "agosto":
+    estacion = "invierno";
+    break;
+  case "setiembre":
+  case "septiembre":
+  case "octubre":
+  case "noviembre":
+    estacion = "primavera";
+    break;
+  default:
+    estacion = "Mes inválido";
+}
 
-// 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+console.log("6: Estación del año:", estacion);
 
-// 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+// 7. Muestra cuántos días tiene el mes
+let dias;
+
+switch (mes.toLowerCase()) {
+  case "enero":
+  case "marzo":
+  case "mayo":
+  case "julio":
+  case "agosto":
+  case "octubre":
+  case "diciembre":
+    dias = 31;
+    break;
+  case "abril":
+  case "junio":
+  case "setiembre":
+  case "septiembre":
+  case "noviembre":
+    dias = 30;
+    break;
+  case "febrero":
+    dias = 28; // o 29 si es bisiesto
+    break;
+  default:
+    dias = "Mes inválido";
+}
+
+console.log("7: Días del mes:", dias);
+
+// 8. Usa un switch para imprimir un saludo en diferentes idiomas
+let idioma = "fr"; // opciones: "es", "en", "fr", "pt"
+let saludo;
+
+switch (idioma) {
+  case "es":
+    saludo = "¡Hola!";
+    break;
+  case "en":
+    saludo = "Hello!";
+    break;
+  case "fr":
+    saludo = "Bonjour!";
+    break;
+  case "pt":
+    saludo = "Olá!";
+    break;
+  default:
+    saludo = "Idioma no soportado";
+}
+
+console.log("8: Saludo:", saludo);
