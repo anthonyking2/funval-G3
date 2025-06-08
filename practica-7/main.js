@@ -1,4 +1,4 @@
-/* lista de productos disponobles */
+/* lista de productos disponibles */
 const productos = [
   { nombre: "Laptop", precio: 1200 },
   { nombre: "Mouse", precio: 25 },
