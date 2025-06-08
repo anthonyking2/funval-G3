@@ -37,17 +37,17 @@ let productosConDescuento = productos.map(p => ({
 console.log("\n Productos con 10% de descuento:", productosConDescuento);
 
 /* 4️. Filtrar productos por precio <100 */
-const productosBaratos = productos.filter(p => p.precio < 100);
+let productosBaratos = productos.filter(p => p.precio < 100);
 console.log("\n Productos con precio menor a $100:", productosBaratos);
 
 /* 5️. Obtener primeros 2 productos */
-const primerosDos = productos.slice(0, 2);
+let primerosDos = productos.slice(0, 2);
 console.log("\n Primeros 2 productos:", primerosDos);
 
 /* 6️. Ordenar productos de mayor a menor */
-const productosOrdenadosPorPrecio = [...productos].sort((a, b) => a.precio - b.precio);
+let productosOrdenadosPorPrecio = [...productos].sort((a, b) => a.precio - b.precio);
 console.log("\n Productos ordenados por precio (menor a mayor):", productosOrdenadosPorPrecio);
 
 /* 7️. Invertir orden de los productos */
-const productosInvertidos = [...productos].reverse();
+let productosInvertidos = [...productos].reverse();
 console.log("\n Productos en orden inverso:", productosInvertidos);
