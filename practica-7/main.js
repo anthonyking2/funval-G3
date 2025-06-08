@@ -1,3 +1,4 @@
+/* lista de productos disponobles */
 const productos = [
   { nombre: "Laptop", precio: 1200 },
   { nombre: "Mouse", precio: 25 },
@@ -11,41 +12,42 @@ const productos = [
   { nombre: "Tablet", precio: 500 }
 ];
 
-/// 1️⃣ Recorrer y mostrar productos (forEach)
-console.log("📦 Lista de productos:");
+/* 1️. Recorrer y mostrar productos */
+
+console.log("Lista de productos:");
 productos.forEach(producto => {
   console.log(`${producto.nombre} - $${producto.precio}`);
 });
 
-/// 2️⃣ Crear array de nombres + verificar disponibilidad
-// Parte 1
-const productosDisponibles = productos.map(p => p.nombre);
-console.log("\n📋 Productos disponibles:", productosDisponibles);
+/* 2. crear array de nombres y verificar disponibilidad */
+/* 2.1 */
+let productosDisponibles = productos.map(p => p.nombre);
+console.log("\n Productos disponibles:", productosDisponibles);
 
-// Parte 2
-const productoBuscado = "Monitor";
-const estaDisponible = productosDisponibles.includes(productoBuscado);
-console.log(`\n🔍 ¿Está disponible "${productoBuscado}"?`, estaDisponible ? "Sí" : "No");
+/* 2.2 */
+let productoBuscado = "Mouse";
+let estaDisponible = productosDisponibles.includes(productoBuscado);
+console.log(`\n ¿Está disponible "${productoBuscado}"?`, estaDisponible ? "Sí" : "No");
 
-/// 3️⃣ Aplicar descuento del 10%
-const productosConDescuento = productos.map(p => ({
+/* 3️. aplicar descuento del 10% */
+let productosConDescuento = productos.map(p => ({
   nombre: p.nombre,
-  precio: +(p.precio * 0.9).toFixed(2) // Redondeamos a 2 decimales
+  precio: +(p.precio * 0.9)
 }));
-console.log("\n💸 Productos con 10% de descuento:", productosConDescuento);
+console.log("\n Productos con 10% de descuento:", productosConDescuento);
 
-/// 4️⃣ Filtrar productos por precio < $100
+/* 4️. Filtrar productos por precio <100 */
 const productosBaratos = productos.filter(p => p.precio < 100);
-console.log("\n🎯 Productos con precio menor a $100:", productosBaratos);
+console.log("\n Productos con precio menor a $100:", productosBaratos);
 
-/// 5️⃣ Obtener primeros 2 productos
+/* 5️. Obtener primeros 2 productos */
 const primerosDos = productos.slice(0, 2);
-console.log("\n📋 Primeros 2 productos:", primerosDos);
+console.log("\n Primeros 2 productos:", primerosDos);
 
-/// 6️⃣ Ordenar productos por precio ascendente
+/* 6️. Ordenar productos de mayor a menor */
 const productosOrdenadosPorPrecio = [...productos].sort((a, b) => a.precio - b.precio);
-console.log("\n📈 Productos ordenados por precio (menor a mayor):", productosOrdenadosPorPrecio);
+console.log("\n Productos ordenados por precio (menor a mayor):", productosOrdenadosPorPrecio);
 
-/// 7️⃣ Invertir orden de los productos
+/* 7️. Invertir orden de los productos */
 const productosInvertidos = [...productos].reverse();
-console.log("\n🔄 Productos en orden inverso:", productosInvertidos);
+console.log("\n Productos en orden inverso:", productosInvertidos);
