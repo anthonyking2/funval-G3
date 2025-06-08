@@ -4,11 +4,11 @@ let historial = [];
 function mostrarMenu() {
   return prompt(
     "\n CUENTA BANCARIA\n \nSelecciona una opción:\n" +
-    "1. Ingresar dinero\n" +
-    "2. Retirar dinero\n" +
-    "3. Consultar saldo\n" +
-    "4. Ver historial\n" +
-    "5. Salir\n"
+      "1. Ingresar dinero\n" +
+      "2. Retirar dinero\n" +
+      "3. Consultar saldo\n" +
+      "4. Ver historial\n" +
+      "5. Salir\n"
   );
 }
 
