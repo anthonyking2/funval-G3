@@ -17,3 +17,4 @@ console.log(salida);
 
 /* agregar las llaves de turno y lista de paceientes 
 que sera un array a ese objeto convirtiendolo en un superProfesional */
+
