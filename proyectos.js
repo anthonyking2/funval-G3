@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const proyectos = [
         {
-            titulo: "Landing Page Simple",
-            descripcion: "Página promocional básica para producto o servicio.",
-            imagen: "./img/proyectos/landing.png",
+            titulo: "Pagina Web Simple",
+            descripcion: "Descripcion de Programador Carlo Bravo.",
+            imagen: "./img/PaginaWebSimple.jpg",
+            enlace: "./practica 1/index.html"
         },
 {
             titulo: "Login Nexus",
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
             imagen: "./img/proyectos/calculadora.png",
             enlace: "./"
         },
-        // Puedes agregar más aquí
     ];
 
     const contenedor = document.getElementById("contenedor-proyectos");
