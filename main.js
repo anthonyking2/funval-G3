@@ -23,3 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
     contenedor.appendChild(card);
   });
 });
+
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nombre = e.target[0].value.trim();
+  const email = e.target[1].value.trim();
+  const mensaje = e.target[2].value.trim();
+
+  if (!nombre || !email || !mensaje) {
+    alert("Por favor completa todos los campos.");
+    return;
+  }
+  alert("Mensaje enviado correctamente");
+});
