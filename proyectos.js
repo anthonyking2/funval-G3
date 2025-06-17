@@ -31,11 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
             imagen: "./img/practica6.png",
             enlace: "./practica-6/index.html"
         },
+        
         {
             titulo: "Metodos de Arrays",
             descripcion: "Ejercicios de Métodos de Arrays en JavaScript",
             imagen: "./img/practica7.png",
             enlace: "./practica-7/index.html"
+        },
+        {
+            titulo: "TIC-TAC-TOE",
+            descripcion: "Frontend Mentor - Tic Tac Toe Game",
+            imagen: "./img/practica8.png",
+            enlace: "./practica-8/index.html"
         },
     ];
 
