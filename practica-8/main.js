@@ -12,7 +12,7 @@ VANTA.NET({
   backgroundColor: 0x131d2d
 });
 
-// Lógica del juego Tic-Tac-Toe
+// Lógica del juego
 const celdas = document.querySelectorAll('.cell');
 const estado = document.getElementById('status');
 const reinicio = document.getElementById('reset');
@@ -33,7 +33,10 @@ celdas.forEach(celda => {
     if (!jugando || tablero[i]) return;
 
     tablero[i] = jugador;
-    celda.textContent = jugador;
+
+const color = jugador === 'X' ? 'text-cyan-400' : 'text-white';
+celda.innerHTML = `<span class="${color} text-6xl font-bold">${jugador}</span>`;
+
 
     if (ganar.some(p => p.every(j => tablero[j] === jugador))) {
       estado.textContent = `Ganó ${jugador}`;

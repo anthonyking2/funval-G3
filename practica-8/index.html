@@ -14,21 +14,41 @@
 
 <body class="relative min-h-screen overflow-hidden">
   <div id="vanta-bg" class="absolute inset-0 -z-10"></div>
-  <main class="flex flex-col items-center justify-center min-h-screen px-4 relative z-10 text-white">
-    <h1 class="text-2xl font-bold mb-4">TIC-TAC-TOE</h1>
-    <div id="board" class="grid grid-cols-3 gap-2 mb-4">
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="0"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="1"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="2"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="3"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="4"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="5"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="6"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="7"></div>
-      <div class="cell w-40 h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer" data-i="8"></div>
+  <main class="flex items-center justify-center min-h-screen px-4 relative z-10 text-white">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="flex items-center justify-center w-full md:w-48 h-24 md:h-48">
+        <div id="status"
+          class="text-white text-xl font-mono px-4 py-2 rounded-lg text-center w-full md:w-auto border-2 border-cyan-400 bg-gradient-to-br from-white/20 to-cyan-400/30 backdrop-blur-md shadow-lg">
+          Turno de X
+        </div>
+      </div>
+      <div id="board" class="grid grid-cols-3 gap-2">
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="0"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="1"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="2"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="3"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="4"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="5"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="6"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="7"></div>
+        <div class="cell w-24 h-24 md:w-40 md:h-40 bg-gray-700 flex items-center justify-center text-2xl cursor-pointer"
+          data-i="8"></div>
+      </div>
+      <div class="flex items-center justify-center w-full md:w-48 h-24 md:h-48">
+        <button id="reset"
+          class="text-white text-xl font-mono px-4 py-2 rounded-lg w-full md:w-auto border-2 border-cyan-400 bg-gradient-to-br from-white/20 to-cyan-400/30 backdrop-blur-md shadow-lg hover:bg-cyan-400 hover:text-black transition">
+          REINICIAR
+        </button>
+      </div>
     </div>
-    <p id="status" class="mb-2">Turno de X</p>
-    <button id="reset" class="bg-green-600 px-4 py-1 rounded">Reiniciar</button>
   </main>
 </body>
 
