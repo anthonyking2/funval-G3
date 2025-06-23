@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
             imagen: "./img/practica8.png",
             enlace: "./practica-8/index.html"
         },
+        {
+            titulo: "Implementación de async/await",
+            descripcion: "Uso de async y await, en JavaScript",
+            imagen: "./img/practica10.png",
+            enlace: "./practica-10/index.html"
+        },
     ];
 
     const contenedor = document.getElementById("contenedor-proyectos");
