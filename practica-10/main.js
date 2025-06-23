@@ -7,7 +7,7 @@ async function fetchUsers() {
 
     users.forEach(user => {
       contenedor.innerHTML += `
-        <div class="bg-blue-400 text-white rounded shadow p-6 w-full max-w-xs sm:max-w-sm">
+        <div class="bg-blue-400 text-black rounded shadow p-6 w-full max-w-xs sm:max-w-sm">
           <h3 class="font-bold text-lg mb-2">Nombre: ${user.name}</h3>
           <p><strong>Usuario:</strong> ${user.username}</p>
           <p><strong>Email:</strong> ${user.email}</p>
