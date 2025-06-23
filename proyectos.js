@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             titulo: "Implementación de async/await",
             descripcion: "Uso de async y await, en JavaScript",
-            imagen: "./img/practica10.png",
+            imagen: "./img/imagen10.png",
             enlace: "./practica-10/index.html"
         },
     ];
